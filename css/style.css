@@ -1,5 +1,111 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* inizio general */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #1a1f26;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    .flex_column{
+        flex-direction: column;
+    }
+
+    .position_relative{
+        position: relative;
+    }
+
+    .position_absolute{
+        position: absolute;
+    }
+
+    .position_fixed{
+        position: fixed;
+    }
+/* fine general */
+
+/* inizio aside */
+    aside{
+        background-color: black;
+        width: 250px;
+        height: 92vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .superiore{
+        background-color: red;
+        width: 100%;
+        height: 500px; /*provvisorio*/
+    }
+
+    .inferiore{
+        background-color: blue;
+        width: 100%;
+        height: 100px; /*provvisorio*/
+        align-items: 50px;
+    }
+/* fine aside */
+
+/* inizio banner */
+    .banner{
+        top: 0px;
+        right: 0px;
+        width: calc(100vw - 250px);
+        height: 10vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .btn_banner{
+        background-color: aqua; /*provvisorio*/
+        top: 0px;
+        right: 0px; 
+    }
+/* fine banner */
+
+/* inizio main */
+    main{
+        top: 10vh;
+        right: 0px;
+        width: calc(100vw - 250px);
+    }
+
+    .menu{
+        width: 100%;
+        justify-content: center;
+        color: grey;
+    }
+
+        ul{
+            list-style: none;
+        }
+
+        li{
+            display: inline;
+        }
+
+    /* provvisorio */
+    .quadrato{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        margin: 10px;
+    }
+
+/* fine main */
+
+/* inizio footer */
+    .footer{
+        z-index: 999;
+        bottom: 0;
+        width: 100vw;
+        height: 8vh;
+        background-color: yellow;
+    }
+/* fine footer */
