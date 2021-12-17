@@ -6,27 +6,73 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify</title>
+
+        <!-- link css -->
         <link rel="stylesheet" href="css/style.css">
+
+        <!-- link font awesome cdn 5.15.4 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
 
     <body>
 
         <!-- inizio aside -->
             <aside class="flex">
-                <div class="superiore"></div>
+                <div class="superiore">
+
+                    <img src="img/logo.svg" alt="Img logo Spotify">
+
+                    <nav>
+                        <ul>
+                            <li class="flex">
+                                <img src="img/home.svg" alt="Img casa">
+                                <span><a href="#">Home</a></span>
+                            </li>
+                            <li class="flex">
+                                <img src="img/search.svg" alt="Img cerca">
+                                <span><a href="#">Cerca</a></span>
+                            </li>
+                            <li class="flex">
+                                <img src="img/libreria.svg" alt="Img libreria">
+                                <span><a href="#">La tua libreria</a></span>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="playlist">
+                        <div>Playlist</div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-plus-square"></i>
+                                    <span>Crea Playlist</span>
+                                </a>
+                            </li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
                 <div class="inferiore"></div>
             </aside>
         <!-- fine aside -->
     
         <!-- inizio banner -->
-            <div class="banner position_absolute position_relative">
-                <div class="btn_banner position_absolute">effettua upgrade</div>
+            <div class="banner position_absolute flex">
+                <div class="btn_banner">effettua upgrade</div>
             </div>
         <!-- fine banner -->
 
         <!-- inizio main -->
             <main class="position_absolute">
-                <nav class="menu flex">
+                <div class="menu flex">
                     <ul>
                         <li>in evidenza</li>
                         <li>podcast</li>
@@ -35,7 +81,7 @@
                         <li>nuove uscite</li>
                         <li>scopri</li>
                     </ul>
-                </nav>
+                </div>
                 
                 <div class="flex flex_column">
                    
