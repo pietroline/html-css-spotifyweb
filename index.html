@@ -20,7 +20,7 @@
             <aside class="flex">
                 <div class="superiore">
 
-                    <img src="img/logo.svg" alt="Img logo Spotify">
+                    <img class="logo" src="img/logo.svg" alt="Img logo Spotify">
 
                     <nav>
                         <ul>
@@ -60,7 +60,18 @@
 
 
                 </div>
-                <div class="inferiore"></div>
+                <div class="inferiore flex flex_column">
+                    <div class="prima_riga flex">
+                        <img src="img/download.svg" alt="Img download">
+                        <span>Installa app</span>
+                    </div>
+                    <div class="seconda_riga flex">
+                        <img src="img/profile.svg" alt="Img profilo">
+                        <span>John Doe</span>
+                    </div>
+                   
+                    
+                </div>
             </aside>
         <!-- fine aside -->
     
@@ -83,25 +94,25 @@
                     </ul>
                 </div>
                 
-                <div class="flex flex_column">
+                <div class="contenuto flex flex_column">
                    
                     <div class="recenti flex">
-                        <div class="quadrato uno"></div>
-                        <div class="quadrato uno"></div>
-                        <div class="quadrato uno"></div>
-                        <div class="quadrato uno"></div>
-                        <div class="quadrato uno"></div>
-                        <div class="quadrato uno"></div>
+                        <img src="img/metal_lifting.jpg" alt="Img heavy Metal">
+                        <img src="img/stranger.jpeg" alt="Img Stranger Things soundtrack">
+                        <img src="img/aquietplace.jpeg" alt="Img A quiet place">
+                        <img src="img/split.jpeg" alt="Img Split">
+                        <img src="img/cure.jpeg" alt="Img A cure for wellness">
+                        <img src="img/sinister.jpeg" alt="Img Sinister">
                     </div>
 
                     <div class="creati flex">
-                        <div class="quadrato due"></div>
-                        <div class="quadrato due"></div>
+                        <img src="img/radar.jpeg" alt="Img Release Radar">
+                        <img src="img/mixdaily.jpeg" alt="Img Daily mix">
                     </div>
 
                     <div class="popolari flex">
-                        <div class="quadrato tre"></div>
-                        <div class="quadrato tre"></div>
+                        <img src="img/youg.jpeg" alt="Img Lana del rey">
+                        <img src="img/einaudi.jpeg" alt="Img Ludovico Einaudi">
                     </div>
                     
                 </div>
@@ -109,7 +120,39 @@
         <!-- fine main -->
 
         <!-- inizio footer -->
-            <footer class="position_fixed position_absolute footer"></footer>
+            <footer class="position_fixed position_absolute footer flex">
+                <div class="left flex">
+                    <div class="canzone flex">
+                        <img src="img/sinister.jpeg" alt="">
+                        <div class="titolo">
+                            <h5>Sinister</h5>
+                            <h5>Brano nome</h5>
+                        </div>
+                    </div>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+                <div class="main flex flex_column">
+                    <div class="pulsanti flex">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="far fa-play-circle"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                    <div class="timeline"> 
+                        <span>0:25</span>
+                                                <!-- manca barra -->
+                        <span>4:35</span>
+                    </div>
+                </div>
+                <div class="right flex">
+                    <i class="fas fa-list"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
+                                                 <!-- manca barra -->
+                </div>
+            </footer>
         <!-- fine footer -->
 
     </body>
