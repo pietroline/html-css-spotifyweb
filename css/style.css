@@ -64,9 +64,17 @@
             padding-left: 20px;
         }
 
-        .superiore li > svg{
-            width: 40px;
-            filter: invert(54%) sepia(0%) saturate(0%) hue-rotate(145deg) brightness(93%) contrast(88%);
+        .superiore li {
+            width: 70px;
+            filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(144deg) brightness(82%) contrast(84%);
+        }
+
+        .superiore .home a{
+            color: #fff;
+        }
+
+        .superiore li:first-child{
+            filter: none;
         }
 
         .superiore li a > i{
@@ -98,10 +106,9 @@
         padding: 0px 20px;
     }
 
-        .inferiore svg{
+        .inferiore img{
             width: 15px;
             fill: #808080;
-            margin-right: 10px;
         }
 
         .inferiore .prima_riga{
@@ -109,15 +116,23 @@
             padding: 0px 0px 10px 0px;
         }
 
+            .prima_riga span{
+                margin-left: 10px;
+            }
+
         .inferiore .seconda_riga{
             padding: 10px 0px 0px 0px;
             color: #fff
         }
 
-            .seconda_riga svg{
-                filter: none;
+            .seconda_riga div:first-child{
                 background-color: #808080;
                 border-radius: 50%;
+                padding: 0px 4px;
+            }
+
+            .seconda_riga span{
+                margin-left: 10px;
             }
 
 /* fine aside */
@@ -165,9 +180,19 @@
         text-align: center;
     }
 
-        .menu li:first-child{
-            padding: 5px 0px;
+        .elementi_menu{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .container{
+            align-items: center;
+        }
+
+        .menu .bordo{
+            padding: 2px 0px;
             border-bottom: solid 3px #9eff52;
+            width: 30px;
         }
         .menu ul{
             list-style: none;
@@ -177,8 +202,7 @@
         .menu li{
             display: inline;
             font-size: 15px;
-            margin: 0px 10px;
-            
+            margin: 0px 10px; 
         }
 
     .recenti, .creati, .popolari{
@@ -206,6 +230,10 @@
         cursor: pointer;
     }
     
+        .album .box:hover{
+            background-color: red;
+        }
+
     .album .titolo{
         margin: 10px;
         width: 150px;
