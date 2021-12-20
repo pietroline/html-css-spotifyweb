@@ -24,7 +24,7 @@
 
                     <nav>
                         <ul>
-                            <li class="flex">
+                            <li class="home flex">
                                 <img src="img/home.svg" alt="Img casa">
                                 <span><a href="#">Home</a></span>
                             </li>
@@ -43,7 +43,7 @@
                         <div>Playlist</div>
                         <ul>
                             <li>
-                                <a href="#">
+                                <a class="flex" href="#">
                                     <i class="fas fa-plus-square"></i>
                                     <span>Crea Playlist</span>
                                 </a>
@@ -60,7 +60,7 @@
 
 
                 </div>
-                <div class="inferiore flex flex_column">
+                <div class="inferiore">
                     <div class="prima_riga flex">
                         <img src="img/download.svg" alt="Img download">
                         <span>Installa app</span>
@@ -95,26 +95,81 @@
                 </div>
                 
                 <div class="contenuto flex flex_column">
-                   
-                    <div class="recenti flex">
-                        <img src="img/metal_lifting.jpg" alt="Img heavy Metal">
-                        <img src="img/stranger.jpeg" alt="Img Stranger Things soundtrack">
-                        <img src="img/aquietplace.jpeg" alt="Img A quiet place">
-                        <img src="img/split.jpeg" alt="Img Split">
-                        <img src="img/cure.jpeg" alt="Img A cure for wellness">
-                        <img src="img/sinister.jpeg" alt="Img Sinister">
+
+                    <div class="recenti">
+                        <div class="macroarea">Recently played</div>
+                        <div class="album_recenti flex">
+                            <div class="album">
+                                <img src="img/metal_lifting.jpg" alt="Img heavy Metal">
+                                <div class="titolo">Heavu Metal</div>
+                                <div class="sottotitolo">Subtitle</div>
+                            </div>
+                            <div class="album">
+                                <img src="img/stranger.jpeg" alt="Img Stranger Things soundtrack">
+                                <div class="titolo">Stranger Things, Vol. 1(a Netflix Original Serie Soundtrack)</div>
+                                <div class="sottotitolo">Kyle Dixon & Michael Stein</div>
+                            </div>
+                            <div class="album">
+                                <img src="img/aquietplace.jpeg" alt="Img A quiet place">
+                                <div class="titolo">A quiet place</div>
+                                <div class="sottotitolo">Subtitle</div>
+                            </div>
+                            <div class="album">
+                                <img src="img/split.jpeg" alt="Img Split">
+                                <div class="titolo">Split</div>
+                                <div class="sottotitolo">Subtitle</div>
+                            </div>
+                            <div class="album">
+                                <img src="img/cure.jpeg" alt="Img A cure for wellness">
+                                <div class="titolo">A cure for wellness</div>
+                                <div class="sottotitolo">Subtitle</div>
+                            </div>
+                            <div class="album">
+                                <img src="img/sinister.jpeg" alt="Img Sinister">
+                                <div class="titolo">Sinister</div>
+                                <div class="sottotitolo">Subtitle</div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="creati flex">
-                        <img src="img/radar.jpeg" alt="Img Release Radar">
-                        <img src="img/mixdaily.jpeg" alt="Img Daily mix">
+                    <div class="creati">
+                        <div class="macroarea">
+                            <span>Creati per John Doe</span>
+                            <div class="sotto_macroarea">Più ascolti, più accurati saranno i suggerimenti.</div>
+                        </div>
+                        <div class="album_creati flex">
+                            <div class="album">
+                                <img src="img/radar.jpeg" alt="Img Release Radar">
+                                <div class="titolo">Release Radar</div>
+                                <!-- <div class="sottotitolo">Subtitle</div> -->
+                            </div>
+                            <div class="album">
+                                <img src="img/mixdaily.jpeg" alt="Img Daily mix">
+                                <div class="titolo">Daily Mix 1</div>
+                                <!-- <div class="sottotitolo">Kyle Dixon & Michael Stein</div> -->
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="popolari flex">
-                        <img src="img/youg.jpeg" alt="Img Lana del rey">
-                        <img src="img/einaudi.jpeg" alt="Img Ludovico Einaudi">
+                    <div class="popolari">
+                        <div class="macroarea">
+                            <span>Creati per John Doe</span>
+                            <div class="sotto_macroarea">Più ascolti, più accurati saranno i suggerimenti.</div>
+                        </div>
+                        <div class="album_creati flex">
+                            <div class="album">
+                                <img class="rotondo" src="img/youg.jpeg" alt="Img Lana del rey">
+                                <div class="titolo">Lana del rey</div>
+                                <!-- <div class="sottotitolo">Subtitle</div> -->
+                            </div>
+                            <div class="album">
+                                <img class="rotondo" src="img/einaudi.jpeg" alt="Img Ludovico Einaudi">
+                                <div class="titolo">Ludovico Einaudi</div>
+                                <!-- <div class="sottotitolo">Kyle Dixon & Michael Stein</div> -->
+                            </div>
+                        </div>
                     </div>
-                    
+                
                 </div>
             </main>
         <!-- fine main -->
@@ -129,8 +184,10 @@
                             <h5>Brano nome</h5>
                         </div>
                     </div>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
+                    <div class="feedback">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-folder"></i>
+                    </div>
                 </div>
                 <div class="main flex flex_column">
                     <div class="pulsanti flex">
@@ -140,9 +197,11 @@
                         <i class="fas fa-step-forward"></i>
                         <i class="fas fa-redo-alt"></i>
                     </div>
-                    <div class="timeline"> 
+                    <div class="timeline flex"> 
                         <span>0:25</span>
-                                                <!-- manca barra -->
+                        <div class="barra player">
+                            <div class="livello player"></div>
+                        </div>       
                         <span>4:35</span>
                     </div>
                 </div>
@@ -150,7 +209,9 @@
                     <i class="fas fa-list"></i>
                     <i class="fas fa-desktop"></i>
                     <i class="fas fa-volume-up"></i>
-                                                 <!-- manca barra -->
+                    <div class="barra volume">
+                        <div class="livello volume"></div>
+                    </div>
                 </div>
             </footer>
         <!-- fine footer -->

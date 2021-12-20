@@ -3,6 +3,7 @@
 
 
 
+
 /* inizio general */
     *{
         margin: 0;
@@ -49,13 +50,17 @@
         /* background-color: red; */
         width: 100%;
         height: 500px; /*provvisorio*/
-        padding: 10px 20px;
     }
 
+        .superiore .home{
+            border-left: solid 3px #9eff52;
+        }
+        
         .superiore li{
             align-items: center;
             margin: 8px 0px;
             list-style: none;
+            padding-left: 20px;
         }
 
         .superiore li > img{
@@ -65,15 +70,20 @@
 
         .superiore li a > i{
             font-size: 50px;
+            padding-right: 10px;
         }
 
         .superiore a{
             color: #808080;
             text-decoration: none;
+            align-items: center;
         }
 
         .superiore .playlist > div{
+            color: #fff;
+            text-transform: uppercase;
             margin-top: 20px;
+            padding: 20px;
         }
 
     .inferiore{
@@ -83,16 +93,30 @@
         align-items: 50px;
         align-items: center;
         align-items: flex-start;
+        padding: 0px 20px;
     }
 
         .inferiore img{
             width: 15px;
             filter: invert(54%) sepia(0%) saturate(0%) hue-rotate(145deg) brightness(93%) contrast(88%);
+            margin-right: 10px;
         }
 
         .inferiore .prima_riga{
             border-bottom: 1px solid #808080;
+            padding: 0px 0px 10px 0px;
         }
+
+        .inferiore .seconda_riga{
+            padding: 10px 0px 0px 0px;
+            color: #fff
+        }
+
+            .seconda_riga img{
+                filter: none;
+                background-color: #808080;
+                border-radius: 50%;
+            }
 
 /* fine aside */
 
@@ -139,37 +163,63 @@
         text-align: center;
     }
 
+        .menu li:first-child{
+            padding: 5px 0px;
+            border-bottom: solid 3px #9eff52;
+        }
         .menu ul{
             list-style: none;
+            text-transform: uppercase;
         }
 
         .menu li{
             display: inline;
+            font-size: 15px;
+            margin: 0px 10px;
+            
         }
+
+    .recenti, .creati, .popolari{
+        margin: 10px 0px;
+    }
+
+    .contenuto .macroarea{
+        font-weight: bold;
+        font-size: 20px;
+        color: #fff;
+        margin: 20px 10px;
+    }
+
+    .contenuto .sotto_macroarea{
+        color: #808080;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .contenuto .album{
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+    }
+        
+    .album .titolo{
+        margin: 10px;
+        width: 150px;
+    }
+
+    .album .sottotitolo{
+        color: #808080;
+        width: 150px;
+    } 
 
     .contenuto img{
         width: 150px;
+        margin-left: 10px;
     }
-    /* inizio provvisorio */
-        .quadrato{
-            width: 300px;
-            height: 300px;
-            margin: 10px;
-        }
 
-        .quadrato.uno{
-            background-color: brown;
-        }
-
-        .quadrato.due{
-            background-color: orange;
-        }
-
-        .quadrato.tre{
-            background-color: pink;
-        }
-    /* fine provvisorio */
-
+    .contenuto img.rotondo{
+        border-radius: 50%;
+    }
 /* fine main */
 
 /* inizio footer */
@@ -186,12 +236,29 @@
             height: 100%;
             color: #808080;
             align-items: center;
+            margin-left: 10px;
         }
 
         .footer .canzone{
             align-items: center;
         }
 
+            .canzone .titolo{
+                margin-left: 10px;
+            }
+
+            .titolo h5:first-child{
+                color: #fff;
+            }
+
+        .left .feedback{
+            margin-left: 50px;
+        }
+
+            .feedback i{
+                margin-right: 10px;
+            }
+        
         .footer .canzone img{
             width: 40px;
             height: 40px;
@@ -199,24 +266,66 @@
 
         .footer .main{
             height: 100%;
-            color: #fff
+            color: #fff;
+            align-items: center;
+        }
+
+        .footer .pulsanti{
+            align-items: center;
         }
 
         .footer .pulsanti i{
             padding: 10px 20px;
-            font-size: 20px;
+            font-size: 15px;
+        }
+
+        .footer .pulsanti i:nth-child(3){
+            font-size: 30px;
+        }
+
+        .main .timeline{
+            align-items: center;
+        }
+        
+        .barra.player{
+            width: 300px;
+            height: 5px;
+            background-color: #808080;
+            border-radius: 10px;
+            margin: 0px 10px;
+        }
+
+        .livello.player{
+            width: 80px;
+            height: 5px;
+            background-color: #fff;
+            border-radius: 10px;
         }
         
         .footer .right{
             height: 100%;
             align-items: center;
             color: #fff;
+            margin-right: 10px;
         }
 
         .footer .right i{
             padding: 0px 10px;
+        }   
+
+        .barra.volume{
+            width: 50px;
+            height: 5px;
+            background-color: #808080;
+            border-radius: 10px;
         }
-        
+
+        .livello.volume{
+            width: 30px;
+            height: 5px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
 /* fine footer */
 
 
@@ -226,12 +335,8 @@
             flex-wrap: wrap;
         }
 
-        .recenti{
+        .album_recenti{
             flex-wrap: wrap;
-        }
-
-        .quadrato{
-            width: calc(25% - 20px);
         }
      
     }
@@ -241,13 +346,10 @@
             flex-wrap: wrap;
         }
 
-        .recenti{
+        .album_recenti{
             flex-wrap: wrap;
         }
 
-        .quadrato{
-            width: calc(50% - 20px);
-        }
     }
 
     @media only screen and (max-width:576px){
@@ -284,12 +386,9 @@
             flex-wrap: wrap;
         }
 
-        .recenti{
+        .album_recenti{
             flex-wrap: wrap;
         }
 
-        .quadrato{
-            width: calc(50% - 20px);
-        }
     }
 /* fine responsive */
