@@ -12,6 +12,11 @@
 
         <!-- link font awesome cdn 5.15.4 -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+        <!-- link google font Montsarrant-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -24,16 +29,16 @@
 
                     <nav>
                         <ul>
-                            <li class="flex">
-                                <img src="img/home.svg" alt="Img casa">
+                            <li class="home flex">
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>
                                 <span><a href="#">Home</a></span>
                             </li>
                             <li class="flex">
-                                <img src="img/search.svg" alt="Img cerca">
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg>
                                 <span><a href="#">Cerca</a></span>
                             </li>
                             <li class="flex">
-                                <img src="img/libreria.svg" alt="Img libreria">
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg>
                                 <span><a href="#">La tua libreria</a></span>
                             </li>
                         </ul>
@@ -43,7 +48,7 @@
                         <div>Playlist</div>
                         <ul>
                             <li>
-                                <a href="#">
+                                <a class="flex" href="#">
                                     <i class="fas fa-plus-square"></i>
                                     <span>Crea Playlist</span>
                                 </a>
@@ -60,13 +65,13 @@
 
 
                 </div>
-                <div class="inferiore flex flex_column">
+                <div class="inferiore">
                     <div class="prima_riga flex">
-                        <img src="img/download.svg" alt="Img download">
+                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#ffffff" fill-rule="evenodd"/></svg>
                         <span>Installa app</span>
                     </div>
                     <div class="seconda_riga flex">
-                        <img src="img/profile.svg" alt="Img profilo">
+                        <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg"><title>User Icon</title><path d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z" fill="#ffffff" fill-rule="evenodd"/></svg>
                         <span>John Doe</span>
                     </div>
                    
@@ -95,26 +100,113 @@
                 </div>
                 
                 <div class="contenuto flex flex_column">
-                   
-                    <div class="recenti flex">
-                        <img src="img/metal_lifting.jpg" alt="Img heavy Metal">
-                        <img src="img/stranger.jpeg" alt="Img Stranger Things soundtrack">
-                        <img src="img/aquietplace.jpeg" alt="Img A quiet place">
-                        <img src="img/split.jpeg" alt="Img Split">
-                        <img src="img/cure.jpeg" alt="Img A cure for wellness">
-                        <img src="img/sinister.jpeg" alt="Img Sinister">
+
+                    <div class="recenti">
+                        <div class="macroarea">Recently played</div>
+                        <div class="album_recenti flex">
+                            <div class="album flex flex_column">
+                                <img src="img/metal_lifting.jpg" alt="Img heavy Metal">
+                                <div class="titolo">
+                                    <h5>Heavu Metal</h5>
+                                </div>
+                                <div class="sottotitolo">
+                                    <h6>Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="album flex flex_column">
+                                <img src="img/stranger.jpeg" alt="Img Stranger Things soundtrack">
+                                <div class="titolo">
+                                    <h5>Stranger Things, Vol. 1(a Netflix Original Serie Soundtrack)</h5>
+                                </div>
+                                <div class="sottotitolo">
+                                    <h6>Kyle Dixon & Michael Stein</h6>
+                                </div>
+                            </div>
+                            <div class="album flex flex_column">
+                                <img src="img/aquietplace.jpeg" alt="Img A quiet place">
+                                <div class="titolo">
+                                    <h5>A quiet place</h5>
+                                </div>
+                                <div class="sottotitolo">
+                                    <h6>Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="album flex flex_column">
+                                <img src="img/split.jpeg" alt="Img Split">
+                                <div class="titolo">
+                                    <h5>Split</h5>
+                                </div>
+                                <div class="sottotitolo">
+                                    <h6>Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="album flex flex_column">
+                                <img src="img/cure.jpeg" alt="Img A cure for wellness">
+                                <div class="titolo">
+                                    <h5>A cure for wellness</h5>
+                                </div>
+                                <div class="sottotitolo">
+                                    <h6>Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="album flex flex_column">
+                                <img src="img/sinister.jpeg" alt="Img Sinister">
+                                <div class="titolo">
+                                    <h5>Sinister</h5>
+                                </div>
+                                <div class="sottotitolo">
+                                    <h6>Subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="creati flex">
-                        <img src="img/radar.jpeg" alt="Img Release Radar">
-                        <img src="img/mixdaily.jpeg" alt="Img Daily mix">
+                    <div class="creati">
+                        <div class="macroarea">
+                            <span>Creati per John Doe</span>
+                            <div class="sotto_macroarea">Più ascolti, più accurati saranno i suggerimenti.</div>
+                        </div>
+                        <div class="album_creati flex">
+                            <div class="album flex flex_column">
+                                <img src="img/radar.jpeg" alt="Img Release Radar">
+                                <div class="titolo">
+                                    <h5>Release Radar</h5>
+                                </div>
+                                <!-- <div class="sottotitolo">Subtitle</div> -->
+                            </div>
+                            <div class="album flex flex_column">
+                                <img src="img/mixdaily.jpeg" alt="Img Daily mix">
+                                <div class="titolo">
+                                    <h5>Daily Mix 1</h5>
+                                </div>
+                                <!-- <div class="sottotitolo">Kyle Dixon & Michael Stein</div> -->
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="popolari flex">
-                        <img src="img/youg.jpeg" alt="Img Lana del rey">
-                        <img src="img/einaudi.jpeg" alt="Img Ludovico Einaudi">
+                    <div class="popolari">
+                        <div class="macroarea">
+                            <span>Creati per John Doe</span>
+                            <div class="sotto_macroarea">Più ascolti, più accurati saranno i suggerimenti.</div>
+                        </div>
+                        <div class="album_creati flex">
+                            <div class="album flex flex_column">
+                                <img class="rotondo" src="img/youg.jpeg" alt="Img Lana del rey">
+                                <div class="titolo">
+                                    <h5>Lana del rey</h5>
+                                </div>
+                                <!-- <div class="sottotitolo">Subtitle</div> -->
+                            </div>
+                            <div class="album flex flex_column">
+                                <img class="rotondo" src="img/einaudi.jpeg" alt="Img Ludovico Einaudi">
+                                <div class="titolo">
+                                    <h5>Ludovico Einaudi</h5>
+                                </div>
+                                <!-- <div class="sottotitolo">Kyle Dixon & Michael Stein</div> -->
+                            </div>
+                        </div>
                     </div>
-                    
+                
                 </div>
             </main>
         <!-- fine main -->
@@ -129,8 +221,10 @@
                             <h5>Brano nome</h5>
                         </div>
                     </div>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
+                    <div class="feedback">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-folder"></i>
+                    </div>
                 </div>
                 <div class="main flex flex_column">
                     <div class="pulsanti flex">
@@ -140,9 +234,13 @@
                         <i class="fas fa-step-forward"></i>
                         <i class="fas fa-redo-alt"></i>
                     </div>
-                    <div class="timeline"> 
+                    <div class="timeline flex"> 
                         <span>0:25</span>
-                                                <!-- manca barra -->
+                        <div class="barra player">
+                            <div class="livello player">
+
+                            </div>
+                        </div>       
                         <span>4:35</span>
                     </div>
                 </div>
@@ -150,7 +248,9 @@
                     <i class="fas fa-list"></i>
                     <i class="fas fa-desktop"></i>
                     <i class="fas fa-volume-up"></i>
-                                                 <!-- manca barra -->
+                    <div class="barra volume">
+                        <div class="livello volume"></div>
+                    </div>
                 </div>
             </footer>
         <!-- fine footer -->
