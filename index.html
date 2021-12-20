@@ -25,19 +25,22 @@
             <aside class="flex">
                 <div class="superiore">
 
-                    <img class="logo" src="img/logo.svg" alt="Img logo Spotify">
-
+                    <div class="spotify flex flex_column">
+                        <img class="logo grande" src="img/logo.svg" alt="Img logo grande Spotify">
+                        <img class="logo piccolo" src="img/logo-small.svg" alt="Img logo piccolo Spotify">
+                    </div>
+                   
                     <nav>
                         <ul>
-                            <li class="home flex">
+                            <li class="area selezionata flex">
                                <img src="img/home.svg" alt="">
-                                <span><a href="#">Home</a></span>
+                                <span><a id="home" href="#">Home</a></span>
                             </li>
-                            <li class="flex">
+                            <li class="area flex">
                                 <img src="img/search.svg" alt="">
                                 <span><a href="#">Cerca</a></span>
                             </li>
-                            <li class="flex">
+                            <li class="area flex">
                                 <img src="img/libreria.svg" alt="">
                                 <span><a href="#">La tua libreria</a></span>
                             </li>
@@ -65,7 +68,7 @@
 
 
                 </div>
-                <div class="inferiore">
+                <div class="inferiore flex flex_column">
                     <div class="prima_riga flex">
                        <img src="img/download.svg" alt="">
                         <span>Installa app</span>
@@ -113,12 +116,7 @@
                         <div class="macroarea">Recently played</div>
                         <div class="album_recenti flex">
                             <div class="album flex flex_column">
-                                <div class="box">
-                                    <img src="img/metal_lifting.jpg" alt="Img heavy Metal">
-                                    <div></div>
-                                </div>
-
-                            
+                                <img src="img/metal_lifting.jpg" alt="Img heavy Metal">
                                 <div class="titolo">
                                     <h5>Heavu Metal</h5>
                                 </div>

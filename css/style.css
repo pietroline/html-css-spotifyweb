@@ -39,7 +39,7 @@
 
 /* inizio aside */
     aside{
-        background-color: black;
+        background-color: #000;
         width: 200px;
         height: calc(100vh - 80px);
         flex-direction: column;
@@ -51,41 +51,57 @@
         /* background-color: red; */
         width: 100%;
         height: 500px; /*provvisorio*/
+        align-items: center;
     }
 
-        .superiore .home{
-            border-left: solid 3px #9eff52;
+        .superiore .logo.piccolo{
+            display: none;
+        }
+
+        .superiore .area{
+            border-left: solid 3px #000;
         }
         
+        .superiore .area.selezionata{
+            border-left: solid 3px #9eff52;
+        }
+
         .superiore li{
             align-items: center;
             margin: 8px 0px;
             list-style: none;
             padding-left: 20px;
+            width: 70px;  
         }
-
-        .superiore li {
-            width: 70px;
-            filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(144deg) brightness(82%) contrast(84%);
-        }
-
-        .superiore .home a{
-            color: #fff;
-        }
-
-        .superiore li:first-child{
-            filter: none;
-        }
-
+        
         .superiore li a > i{
             font-size: 50px;
             padding-right: 10px;
         }
 
+        .superiore img{
+            filter: brightness(50%) contrast(0.5);
+        }
+
+        .superiore .logo {
+            filter: none;
+        }
+
+        .superiore .selezionata img{
+            filter: none;
+        }
+
+        #home{
+            color: #fff;
+        }
+
+        .spotify{
+            align-items: center;
+        }
+
         .superiore a{
             color: #808080;
             text-decoration: none;
-            align-items: center;
         }
 
         .superiore .playlist > div{
@@ -102,7 +118,6 @@
         height: 60px; /*provvisorio*/
         align-items: 50px;
         align-items: center;
-        align-items: flex-start;
         padding: 0px 20px;
     }
 
@@ -194,6 +209,7 @@
             border-bottom: solid 3px #9eff52;
             width: 30px;
         }
+
         .menu ul{
             list-style: none;
             text-transform: uppercase;
@@ -229,10 +245,6 @@
         align-items: center;
         cursor: pointer;
     }
-    
-        .album .box:hover{
-            background-color: red;
-        }
 
     .album .titolo{
         margin: 10px;
@@ -389,10 +401,19 @@
             width: 50px; /*provvisorio*/
         }
 
-            aside .superiore .logo{
+            aside .superiore .logo.grande{
                 display: none;
-                /*aggiungere logo piccolo spotify */
             }
+
+            aside .superiore .logo.piccolo{
+                display: block;
+                width: 30px;
+                
+            }
+
+                .superiore li{
+                    width: 50px;
+                }
 
             aside .superiore nav ul span{
                 display: none;
@@ -404,6 +425,10 @@
 
             aside .inferiore span{
                 display: none;
+            }
+
+            .inferiore .prima_riga{
+                border-bottom: none;
             }
 
         .banner{
