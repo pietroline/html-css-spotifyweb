@@ -112,10 +112,14 @@
         }
         
         .playlist ul{
-            height: 30vh;
+            height: 35vh;
             overflow-y: auto;
         }
         
+        .playlist li{
+            padding: 10px 0px;
+        }
+
     .inferiore{
         background-color: #000;
         padding: 0px 20px;
@@ -239,11 +243,12 @@
     }
 
     .album_recenti, .album_creati, .album_popolari{
+        width: 100%;
         flex-wrap: wrap;
     }
 
     .contenuto img{
-        width: 150px;
+        width: 90%;
     }
 
     .contenuto img.rotondo{
@@ -289,6 +294,7 @@
         font-weight: bold;
         align-items: center;
         cursor: pointer;
+        width: calc(100% / 6);
     }
 
         .album .titolo{
@@ -419,7 +425,7 @@
             }   
 
             .barra.volume{
-                width: 150px;
+                width: 60px;
                 height: 5px;
                 background-color: #808080;
                 border-radius: 10px;
@@ -427,7 +433,7 @@
             }
 
             .livello.volume{
-                width: 100px;
+                width: 40px;
                 height: 5px;
                 background-color: #fff;
                 border-radius: 10px;
@@ -435,7 +441,7 @@
             }
 
             .punto_volume{
-                width: 100px;
+                width: 40px;
                 height: 5px;
                 justify-content: flex-end;
                 align-items: center;
@@ -458,23 +464,15 @@
 
 /* inizio responsive */
     @media only screen and (min-width: 768px) and (max-width:992px){
-        .menu{
-            flex-wrap: wrap;
-        }
-
-        .album_recenti{
-            flex-wrap: wrap;
+        .contenuto .album{
+            width: 25%;
         }
      
     }
 
     @media only screen and (min-width: 576px) and (max-width:768px){
-        .menu{
-            flex-wrap: wrap;
-        }
-
-        .album_recenti{
-            flex-wrap: wrap;
+        .contenuto .album{
+            width: 50%;
         }
 
     }
@@ -520,7 +518,6 @@
         }
 
         .inferiore{
-            padding: 0px;
             align-items: center;
         }
 
@@ -532,13 +529,8 @@
             width: calc(100% - 50px);
         }
 
-        .menu{
-            flex-wrap: wrap;
+        .contenuto .album{
+            width: 50%;
         }
-
-        .album_recenti{
-            flex-wrap: wrap;
-        }
-
     }
 /* fine responsive */
