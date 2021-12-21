@@ -35,6 +35,25 @@
     .position_fixed{
         position: fixed;
     }
+
+    .link{
+        text-decoration: none;
+        color: #808080;
+    }
+
+    .border_left{
+        border-left: solid 3px #000;
+    }
+    
+    .border_left.selezionato{
+        border-left: solid 3px #9eff52;
+    }
+
+    .sopra:hover, .sopra:hover img{
+        color: #fff;
+        filter: none;
+    }
+
 /* fine general */
 
 /* inizio aside */
@@ -44,137 +63,97 @@
         height: calc(100vh - 80px);
         flex-direction: column;
         justify-content: space-between;
-        color: #808080;
+    }
+
+    aside img{
+        width: 100%;
     }
 
     .superiore{
         /* background-color: red; */
-        width: 100%;
         min-height: 500px; 
-        align-items: center;
     }
-
-        .superiore .logo.piccolo{
-            display: none;
-        }
-
-        .superiore .area{
-            border-left: solid 3px #000;
-        }
         
-        .superiore .area.selezionata{
-            border-left: solid 3px #9eff52;
-        }
-
-        .superiore li{
+        .superiore a{
             align-items: center;
             margin: 8px 0px;
-            list-style: none;
-            padding-left: 20px;
-            width: 70px;  
-            border-left: solid 3px #000;
-        }
-        
-        .superiore li a > i{
+            padding-left: 20px; 
+            font-weight: bolder;
+        }   
+
+            .spotify .logo.piccolo{
+                display: none;
+            }
+
+            nav li img{
+                width: 50px;
+                filter: brightness(50%) contrast(0.5);
+            }
+
+            nav li:first-child img{ 
+                filter: none;
+            }
+
+            nav #home{
+                color: #fff;
+            }
+
+        .playlist li i{
             font-size: 50px;
             padding-right: 10px;
         }
-
-        .superiore img{
-            filter: brightness(50%) contrast(0.5);
-            cursor: pointer;
-        }
-
-        .superiore .logo {
-            filter: none;
-        }
-
-        .superiore .selezionata img{
-            filter: none;
-        }
-
-        #home{
-            color: #fff;
-        }
-
-        .spotify{
-            align-items: center;
-        }
-
-        .superiore a{
-            color: #808080;
-            text-decoration: none;
-        }
-
-        .superiore nav a:hover{
-            color: #fff;
-        }
-
-        .superiore nav img:hover{
-           filter: none;
-        }
-
-        .playlist{
-            overflow-y: auto;
-        }
-
-        .playlist a:hover{
-            color: #fff;
-        }
-
-        .superiore .playlist > div{
+        
+        .playlist > div{
             color: #fff;
             text-transform: uppercase;
             margin-top: 20px;
             padding: 5px 20px;
             font-weight: bold;
-            border-left: solid 3px #000;
         }
-
+        
+        .playlist{
+            overflow-y: auto;
+        }
+        
     .inferiore{
         /* background-color: blue; */
+        background-color: #000;
         padding: 0px 20px;
         border-left: solid 3px #000;
     }
 
-        .inferiore img{
-            width: 15px;
-            fill: #808080;
-        }
+    .inferiore img{
+        width: 25px;
+        fill: #808080;
+    }
 
-        .inferiore .prima_riga a{
-            text-decoration: none;
-            color: #808080;
-        }
-
-            .prima_riga a:hover{
-                color: #fff;
-            }
+    .inferiore span{
+        margin-left: 10px;
+    }
 
         .inferiore .prima_riga{
             border-bottom: 1px solid #808080;
             padding: 0px 0px 10px 0px;
         }
 
-            .prima_riga span{
-                margin-left: 10px;
-            }
-
-        .inferiore .seconda_riga{
-            padding: 10px 0px 0px 0px;
-            color: #fff
+        .inferiore .prima_riga img{
+            filter: brightness(50%) contrast(0.5);
         }
 
-            .seconda_riga div:first-child{
+            .inferiore .seconda_riga{
+                padding: 10px 0px 0px 0px;
+            }
+
+            .seconda_riga .profile{
                 background-color: #808080;
                 border-radius: 50%;
                 padding: 0px 4px;
             }
 
-            .seconda_riga span{
-                margin-left: 10px;
+            .seconda_riga .proprietario{
+                color: #fff;
+                font-weight: bold;
             }
-
 /* fine aside */
 
 /* inizio banner */
@@ -321,7 +300,6 @@
 
     .contenuto img{
         width: 150px;
-        margin-left: 10px;
     }
 
     .contenuto img.rotondo{
@@ -493,30 +471,43 @@
 
     @media only screen and (max-width:576px){
         aside{
-            width: 50px; /*provvisorio*/
+            width: 50px;
         }
 
-            aside .superiore .logo.grande{
-                display: none;
-            }
+        .spotify{
+            display: flex;
+            justify-content: center;
+        }
 
-            aside .superiore .logo.piccolo{
-                display: block;
-                width: 30px;
-                
-            }
+        .spotify .logo.grande{
+            display: none;
+        }
 
-                .superiore li{
-                    width: 50px;
-                }
+        .spotify .logo.piccolo{
+            display: block;
+            width: 40px;        
+        }
 
-            aside .superiore nav ul span{
-                display: none;
-            }
+               .superiore nav a{
+                   padding-left: 0px;
+               }
 
-            aside .superiore .playlist{
-                display: none;
-            }
+        aside .superiore nav ul span{
+            display: none;
+        }
+
+        aside .superiore .playlist{
+            display: none;
+        }
+
+
+
+
+
+
+
+
+
 
             aside .inferiore span{
                 display: none;
