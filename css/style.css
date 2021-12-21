@@ -309,61 +309,58 @@
     }
 
         .footer .left{
-            height: 100%;
-            color: #808080;
             align-items: center;
             margin-left: 10px;
         }
 
-        .footer .canzone{
-            align-items: center;
-        }
-
-            .canzone .titolo{
-                margin-left: 10px;
+            .footer .canzone img{
+                width: 40px;
+                height: 40px;
+            }
+            
+            .footer .canzone{
+                align-items: center;
             }
 
-            .titolo h5:first-child{
-                color: #fff;
+                .canzone .titolo{
+                    margin-left: 10px;
+                }
+
+                .titolo h5:first-child{
+                    color: #fff;
+                }
+
+            .left .feedback{
+                margin-left: 50px;
             }
 
-        .left .feedback{
-            margin-left: 50px;
-        }
+                .feedback > a{
+                    margin-right: 10px;
+                    color: #808080;
+                }
 
-            .feedback > a{
-                margin-right: 10px;
-                color: #808080;
-            }
-
-            .feedback i:hover{
-                color: #fff;
-            }
-        
-        .footer .canzone img{
-            width: 40px;
-            height: 40px;
-        }
+                .feedback i:hover{
+                    color: #fff;
+                }
 
         .footer .main{
-            height: 100%;
             color: #fff;
             align-items: center;
         }
 
-        .footer .pulsanti{
-            align-items: center;
-        }
-
-        .footer .pulsanti > a{
-            padding: 10px 20px;
-            font-size: 15px;
-            color: #fff;
-        }
-
-            .pulsanti a:nth-child(3):hover{
-                transform: scale(1.2);
+            .footer .pulsanti{
+                align-items: center;
             }
+
+                .footer .pulsanti > a{
+                    padding: 10px 20px;
+                    font-size: 15px;
+                    color: #fff;
+                }
+
+                .pulsanti a:nth-child(3):hover{
+                    transform: scale(1.2);
+                }
 
         .footer .pulsanti a:nth-child(3){
             font-size: 30px;
@@ -373,58 +370,85 @@
             align-items: center;
         }
         
-        .barra.player{
-            width: 300px;
-            height: 5px;
-            background-color: #808080;
-            border-radius: 10px;
-            margin: 0px 10px;
-            cursor: pointer;
-        }
+            .barra.player{
+                width: 300px;
+                height: 5px;
+                background-color: #808080;
+                border-radius: 10px;
+                margin: 0px 10px;
+                cursor: pointer;
+            }
 
-        .livello.player{
-            width: 80px;
-            height: 5px;
-            background-color: #fff;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+            .livello.player{
+                width: 80px;
+                height: 5px;
+                background-color: #fff;
+                border-radius: 10px;
+                cursor: pointer;
+            }
 
-        .livello.player:hover{
-            background-color: yellowgreen;
-        }
+            .punto_ascolto{
+                width: 80px;
+                height: 5px;
+                justify-content: flex-end;
+                align-items: center;
+                display: none;
+            }
+
+            .barra.player:hover .livello.player{
+                background-color: yellowgreen;
+            }
+
+            .barra.player:hover .punto_ascolto{
+                display: flex; 
+            }
         
         .footer .right{
-            height: 100%;
             align-items: center;
             color: #fff;
             margin-right: 10px;
         }
 
-        .footer .right a{
-            padding: 0px 10px;
-            color: #fff;
-        }   
+            .footer .right a{
+                padding: 0px 10px;
+                color: #fff;
+            }   
 
-        .barra.volume{
-            width: 150px;
-            height: 5px;
-            background-color: #808080;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+            .barra.volume{
+                width: 150px;
+                height: 5px;
+                background-color: #808080;
+                border-radius: 10px;
+                cursor: pointer;
+            }
 
-        .livello.volume{
-            width: 100px;
-            height: 5px;
-            background-color: #fff;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+            .livello.volume{
+                width: 100px;
+                height: 5px;
+                background-color: #fff;
+                border-radius: 10px;
+                cursor: pointer;
+            }
 
-        .livello.volume:hover{
-            background-color: yellowgreen;
-        }
+            .punto_volume{
+                width: 100px;
+                height: 5px;
+                justify-content: flex-end;
+                align-items: center;
+                display: none;
+            }
+
+            .livello.volume:hover{
+                background-color: yellowgreen;
+             }
+
+             .barra.barra.volume:hover .livello.volume{
+                background-color: yellowgreen;
+            }
+
+            .barra.volume:hover .punto_volume{
+                display: flex; 
+            }
 /* fine footer */
 
 
