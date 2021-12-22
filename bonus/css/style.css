@@ -466,7 +466,9 @@ main{
             animation: muoviti_volume 2s ease 0s 1;
         }
 
-        
+        .impostazioni{
+            display: none;
+        }
 
         @keyframes muoviti_player {
     
@@ -502,7 +504,6 @@ main{
         height: 30vw;
         overflow-y: hidden;
     }
-
 }
 
 @media only screen and (min-width: 576px) and (max-width:768px){
@@ -515,8 +516,25 @@ main{
         overflow-y: hidden;
     }
 
+    .footer{
+        justify-content: space-around;
+    }
+
+    .left{
+        display: none;
+    }
+
     .audio{
         display: none;
+    }
+
+    .impostazioni{
+        display: flex;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        font-size: 30px;
     }
 
 }
@@ -580,6 +598,27 @@ main{
     .contenuto .album_recenti{
         height: 60vw;
         overflow-y: hidden;
+    }
+
+    .footer{
+        justify-content: space-around;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .audio{
+        display: none;
+    }
+
+    .impostazioni{
+        display: flex;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        font-size: 30px;
     }
 }
 
