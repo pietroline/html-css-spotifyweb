@@ -162,7 +162,7 @@ aside img{
     align-items: center;
     z-index: 10;
     width: calc(100% - 200px);
-    height: 10vh;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -198,7 +198,7 @@ main{
 
 .menu{
     width: 100%;
-    margin-top: 12vh;
+    margin-top: 120px;
     justify-content: center;
 }
 
