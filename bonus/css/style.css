@@ -386,7 +386,6 @@ main{
             border-radius: 10px;
             margin: 0px 10px;
             cursor: pointer;
-            
         }
 
         .livello.player{
@@ -406,6 +405,8 @@ main{
 
         .barra.player:hover .livello.player{
             background-color: yellowgreen;
+            position: absolute;
+            animation: muoviti_barra_player 2s ease 0s 1;
         }
 
         .barra.player:hover .punto_ascolto{
@@ -450,12 +451,10 @@ main{
             display: none;
         }
 
-        .livello.volume:hover{
+         .barra.volume:hover .livello.volume{
             background-color: yellowgreen;
-         }
-
-         .barra.barra.volume:hover .livello.volume{
-            background-color: yellowgreen;
+            position: absolute;
+            animation: muoviti_barra_volume 2s ease 0s 1;
         }
 
         .barra.volume:hover .punto_volume{
@@ -470,6 +469,16 @@ main{
             display: none;
         }
 
+        @keyframes muoviti_barra_player {
+            0%{
+                width: 0px;
+            }
+
+            100%{
+                width: 80px;
+            }
+        }
+
         @keyframes muoviti_player {
     
             0% {
@@ -478,6 +487,16 @@ main{
     
             100% {
                 left: 0px;
+            }
+        }
+
+        @keyframes muoviti_barra_volume {
+            0%{
+                width: 0px;
+            }
+
+            100%{
+                width: 40px;
             }
         }
 
